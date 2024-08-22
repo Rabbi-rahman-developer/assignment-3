@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 3</title>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- tailwind css and daisy ui -->
+     
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- tailwind css configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-color': '#F4F4F4',
+            'color1': '#212121',
+            'color2': '#494949',
+            'btn-bg1': '#ABEF5F',
+            'btn-bg2': '#DaF6ae',
+            'icon-bg': '#1C1C1C',
+            'icon-bg2': '#FFFFFF',
+          },
+
+          fontFamily:  {
+                Manrope : 'Manrope',
+          },
+
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-Manrope bg-bg-color">
+
+     <!-- header section  -->
+
+        <header>
+              <!-- nav  -->
+               <nav class="mx-4 lg:mx-20">
+                <div class="navbar">
+                    <div class="navbar-start">
+                     <span class="bg-btn-bg1 rounded-full text-sm py-1 px-2  -rotate-45"><i class="fa-solid fa-arrow-right"></i></span>
+                      <a class=" ml-1 text-3xl text-color1 font-extrabold">Rinterio</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1"> 
+                        <li><a class="font-extrabold">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+
+
+
+                    <div class="navbar-end lg:btn-ghost space-x-4 lg:block hidden lg:flex ">
+                        <span class="py-1 px-2 bg-icon-bg2 rounded-3xl"> <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <span class="py-1 px-2 bg-icon-bg2  rounded-3xl"> <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+                      <a class="btn bg-btn-bg1 font-extrabold text-xl  rounded-3xl ">Book Consult <span class="bg-icon-bg rounded-full text-sm py-1 px-2 text-white -rotate-45"><i class="fa-solid fa-arrow-right"></i></span> </a>
+                    </div>
+                    <span class=" block ml-28  md:hidden lg:hidden  text-xl py-2 px-3 bg-icon-bg2 rounded-3xl"><i class="fa-solid fa-bars"></i></span>
+
+
+                  </div>
+
+               </nav>
+
+
+               <!-- banner section  -->
+               <section class=" mx-4 lg:mx-20 flex flex-col justify-center items-center mt-2">
+                <div class="space-y-7 flex-1">
+                       <img src="./assets/banner.png" alt="" class="w-full">
+                </div>
+
+                <div class="flex-1 space-y-7">
+
+                    <h1 class="font-extrabold text-3xl lg:text-6xl text-color1 text-center">A barn house of this design has a <br>
+                        striking appearance</h1>
+                     <p class="text-color2 text-center font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>
+                     accents, and large windows that flood the space with natural light.</p>
+                          <div class="flex justify-center">
+                            <button class=" flex-1 lg:flex-none btn bg-btn-bg1 rounded-3xl px-6  ">
+                              View Details <br>
+                              <span class=" bg-btn-bg2 rounded-full text-sm py-1 px-2 -rotate-45 "><i class="fa-solid fa-arrow-right"></i></span>
+      
+                           </button>
+                          </div> 
+                      
+                </div>
+
+               </section>
+           
+        </header>
+
+
+        <!-- main section  -->
+
+
+    
+</body>
+</html>
